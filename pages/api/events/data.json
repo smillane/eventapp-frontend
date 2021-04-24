@@ -1,0 +1,70 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Mock interview training",
+      "slug": "mock-interview-training",
+      "venue": "Horizon Club",
+      "address": "919 3rd Ave New York, New York(NY), 10022",
+      "date": "June 09, 2021",
+      "time": "2:00 PM EST",
+      "description": "Learn interview techniques and get experience on a real set",
+      "image": "/images/sample/event1.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Masked Reunion Party",
+      "slug": "masked-reunion-party",
+      "venue": "Blackjacks",
+      "address": "966 Lexington Ave New York, New York(NY), 10021",
+      "date": "June 2, 2021",
+      "time": "8:00 PM EST",
+      "description": "Come with a mask and enjoy cocktail hour!",
+      "image": "/images/sample/event2.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "Mock interview training day 2",
+      "slug": "mock-interview-training-day2",
+      "venue": "Encore",
+      "address": "675 Water St New York, New York(NY), 10002",
+      "date": "June 11, 2021",
+      "time": "1:00 PM EST",
+      "description": "Learn interview techniques and get experience on a real set. Day 2",
+      "image": "/images/sample/event3.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Juggling festival",
+      "slug": "juggling-festival",
+      "venue": "Club Ozone",
+      "address": "70 W 115th St New York, New York(NY), 10026",
+      "date": "June 20, 2021",
+      "time": "8:00 AM EST",
+      "description": "Come learn how to juggle from your local circus performers",
+      "image": "/images/sample/event4.jpeg"
+    },
+    {
+      "id": "5",
+      "name": "UnMute Rock Festival",
+      "slug": "unmute-rock-festival",
+      "venue": "Studio 54",
+      "address": "55 La Salle St #12K New York, New York(NY), 10027",
+      "date": "June 30, 2021",
+      "time": "8:00 PM EST",
+      "description": "With bands from around the UK ready to send the roof into orbit, get ready for the loudest Welsh festival: the inaugural UnMute 2021.",
+      "image": "/images/sample/event5.jpeg"
+    },
+    {
+      "id": "6",
+      "name": "Our version of a ted talk, hosted by local community college",
+      "slug": "our-version-of-a-ted-talk-hosted-by-local-community-college",
+      "venue": "Onyx Club",
+      "address": "60 Gramercy Park N #2 New York, New York(NY), 10010",
+      "date": "July 2, 2021",
+      "time": "8:00 PM EST",
+      "description": "Come listen to our version of a ted talk, with various topics by different hosts",
+      "image": "/images/sample/event6.jpeg"
+    }
+  ]
+}
