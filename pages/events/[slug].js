@@ -1,12 +1,37 @@
-const { events } = require('./data.json')
+import Layout from '@/components/Layout'
+import { API_URL } from '@/config/index'
 
-export default (req, res) => {
-  const evt = events.filter((ev) => ev.slug === req.query.slug)
+export default function EventPage({ evt }) {
+  return (
+    <Layout>
+      <h1>{evt.name}</h1>
+    </Layout>
+  )
+}
 
-  if (req.method === 'GET') {
-    res.status(200).json(events)
-  } else {
-    res.setHeader('Allow', ['GET'])
-    res.status(405).json({message: `Method ${req.method} is not allowed`})
+
+export async function getStaticPaths() {
+  const res = await fetch(`${API_URL}/api/events`)
+  const events = await res.json()
+
+  const paths = events.map(evt => ({
+    params: { slug: evt.slug },
+  }))
+  
+  return {
+    paths,
+    fallback: true,
+  }
+}
+
+export async function getStaticProps({ params: { slug } }) {
+  const res = await fetch(`${API_URL}/api/events/${slug}`)
+  const events = await res.json()
+
+  return {
+    props: {
+      evt: events[0],
+    },
+    revalidate: 1,
   }
 }
