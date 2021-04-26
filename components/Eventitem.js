@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '@/styles/EventItem.module.css'
 
-export default function Eventitem({evt}) {
+export default function Eventitem({ evt }) {
   return (
     <div className={styles.event}>
       <div className={styles.img}>
