@@ -4,7 +4,7 @@ export default function Showcase() {
   return (
     <div className={styles.showcase}>
       <h1>Welcome to EventsApp</h1>
-      <h2>Find whatever type of event you're looking for</h2>
+      <h2>Find that event you're looking for, or make one!</h2>
     </div>
   )
 }

@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href='/'>
-          <a>Local Events</a>
+          <a>EventsApp</a>
         </Link>
       </div>
 
@@ -18,6 +18,11 @@ export default function Header() {
           <li>
             <Link href='/events/'>
               <a>Events</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='/events/add'>
+              <a>Add Event</a>
             </Link>
           </li>
         </ul>
