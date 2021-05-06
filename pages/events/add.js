@@ -24,13 +24,28 @@ export default function AddEventPage() {
     setValues({ ...values, [name]: value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     const hasEmptyField = Object.values(values).some((element) => element === '')
 
     if(hasEmptyField) {
       toast.error('Fill in all fields')
+    }
+
+    const res = await fetch(`${API_URL}/events`, {
+      methods: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(values)
+    })
+
+    if(!res.ok) {
+      toast.error('Something went wrong')
+    } else {
+      const evt = await res.json()
+      router.push(`/events/${evt.slug}`)
     }
   }
 
